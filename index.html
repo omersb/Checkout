@@ -12,48 +12,63 @@
     ></script>
   </head>
   <body>
+
     <header>
       <h1>Checkout</h1>
     </header>
+
     <main class="container">
-      <form action="method" class="form">
-        <h2>Contact Information</h2>
+        
+        <form action="method" class="form">
+        
+            <h2>Contact Information</h2>
+            
+            <label for="email">Email</label>
+            <div class="input">
+                <input type="email" id="email" placeholder="Enter your email..." />
+                <i class="fa-solid fa-envelope"></i>
+            </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email..." />
-        <i class="fa-solid fa-envelope"></i>
+            <label for="phone">Phone</label>
+            <div class="input">
+                <input type="tel" id="phone" placeholder="Enter your phone..." />
+                <i class="fa-solid fa-phone"></i>
+            </div>
 
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="Enter your phone..." />
-        <i class="fa-solid fa-phone"></i>
+            <h2>Shipping address</h2>
 
-        <h2>Shipping address</h2>
+            <label for="full">Full name</label>
+            <div class="input">
+                <input type="text" id="full" placeholder="Enter your full name..." />
+                <i class="fa-solid fa-user"></i>
+            </div>
 
-        <label for="full">Full name</label>
-        <input type="text" id="full" placeholder="Enter your full name..." />
-        <i class="fa-solid fa-user"></i>
+            <label for="address">Address</label>
+            <div class="input">
+                <input type="text" id="address" placeholder="Enter your address..." />
+                <i class="fa-solid fa-house"></i>
+            </div>
 
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Enter your address..." />
-        <i class="fa-solid fa-house"></i>
+            <label for="city">City</label>
+            <div class="input">
+                <input type="text" id="city" placeholder="Enter your city..." />
+                <i class="fa-solid fa-city"></i>
+            </div>
 
-        <label for="city">City</label>
-        <input type="text" id="city" placeholder="Enter your city..." />
-        <i class="fa-solid fa-city"></i>
+            <div class="country-post">
+                <div class="country">
+                    <label for="country">Country</label>
 
-        <div class="country-post">
-          <div class="country">
-            <label for="country">Country</label>
-            <select name="country" id="country">
-              <option value="turkey">Turkey</option>
-              <option value="germany">Germany</option>
-              <option value="usa">USA</option>
-              <option value="canada">Canada</option>
-              <option value="uk">UK</option>
-            </select>
-            <i class="fa-solid fa-earth-europe"></i>
-          </div>
-          <div class="post">
+                    <select name="country" id="country">
+                        <option value="turkey">Turkey</option>
+                        <option value="germany">Germany</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                    </select>
+                    <i class="fa-solid fa-earth-europe"></i>
+                </div>
+            <div class="post">
             <label for="post">Post Code</label>
             <input
               type="number"

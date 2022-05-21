@@ -7,10 +7,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+header h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 75%;
+  grid-template-columns: 480px 350px;
+  justify-content: center;
+  padding: 1rem;
   margin: 2rem auto;
 }
 
@@ -19,9 +26,19 @@ form {
   flex-direction: column;
 }
 
+form h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+form label {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
 .products {
-  padding: 2rem;
-  border: 1px solid red;
+  padding: 0 3rem;
+
 }
 
 .product {
@@ -31,3 +48,4 @@ form {
 .product img {
   width: 100px;
 }
+
